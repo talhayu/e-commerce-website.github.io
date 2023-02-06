@@ -1,0 +1,348 @@
+:root{
+    --box-shawdow: 0rem 1rem 2rem rgba(22, 160, 133, .2);
+    --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
+    --black: #444;
+    --ligtcolor: #777;
+    --background-color: #e3e6f3;
+}
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0; padding: 0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    /* transition: all .2s ease-out; */
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    text-transform: capitalize;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+section{
+    padding: 2rem 9%;
+}
+/* header section startr */
+header{
+    position: sticky;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    box-shadow: var(--box-shawdow);
+    background-color: #e3e6f3;
+
+}
+ header .navbar a{
+    font-size: 2rem;
+    color: var(--ligtcolor);
+    margin-left: 2rem;
+    position: relative;
+    font-weight: 500;
+}
+header .navbar a:hover,
+header .navbar a.active
+{
+    color: #088178;
+}
+header .navbar a.active::after,
+header .navbar a:hover::after
+{
+    content: '';
+    position: absolute;
+    background-color: #088178;
+    height: .2rem;
+    width: 60%;
+    left: 0rem;
+    bottom: -.5rem;
+}
+header .icons i{
+    font-size: 2rem;
+    color: var(--black);
+    margin-right: 2rem;
+    cursor: pointer;
+}
+header .icons i:hover{
+    color: #088178;
+}
+header #menu-bar{
+    font-size: 2rem;
+    color: var(--black);
+    border: .1rem solid var(--ligtcolor);
+    padding: .5rem 1.2rem ;
+    display: none;
+}
+header .search-bar-container{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    width: 100%;
+    background-color: #e3e6f3;
+    border-top: .1rem solid  rgb(208, 182, 182);
+    z-index: 1001;
+    padding: 1.5rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transform: scale(0);
+    opacity: 0;
+    transition: none;
+}
+header .search-bar-container.active{
+    transform: scale(1);
+    opacity: 1;
+    transition: .3s linear;
+}
+header .search-bar-container #search-bar{
+    width: 100%;
+    font-size: 1.5rem;
+    padding: 1rem;
+    color: black;
+    border-radius: .5rem;
+}
+header .search-bar-container label{
+    font-size: 2.5rem;
+    color: var(--ligtcolor);
+    cursor: pointer;
+    margin-left: 1.5rem;
+}
+header .search-bar-container label:hover{
+    color:  #088178;
+}
+/* header section end */
+
+/* login form container */
+.login-form-container{
+    position: fixed;
+    top: -120%;
+    left: 0;
+    width: 100%;
+   min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:  rgba(0, 0, 0, .7);
+}
+.login-form-container.active{
+    top: 0; 
+}
+.login-form-container form{
+    background-color: var(--background-color);
+    padding: 1.5rem 2rem;
+    margin: 2rem;
+    border-radius: .5rem;
+    width: 50rem;
+}
+.login-form-container form h3{
+    text-align: center;
+    margin: 1rem 0rem;
+    font-size: 3rem;
+    color: var(--black);
+}
+.login-form-container form .box{
+    width: 100%;
+    border: .1rem solid var(--ligtcolor);
+    margin: 1rem 0rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+.login-form-container form .btn{
+    width: 100%;
+   text-align: center;
+    padding: 1rem;
+    background-color: #fff;
+    margin: 1rem 0rem;
+}
+.login-form-container form #remember{
+    margin: 1.5rem 0rem;
+}
+.login-form-container form label{
+    font-size: 1.5rem;
+}
+.login-form-container form p{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+}
+.login-form-container form p a:hover{
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    font-size: 5rem;
+    top: 3rem;
+    right: 3rem;
+    color: lightblue;
+    cursor: pointer;
+}
+/* login form container */
+
+/* home page */
+.home{
+    background-image: url(./hero4.png);
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    background-position: top 25% right 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.home h3{
+    font-size: 3rem;
+    margin: 1rem 0rem;
+    color: var(--black);
+}
+.home h1{
+    font-size: 5rem;
+}
+.home span{
+    color: #088178;
+}
+.home p{
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+    color: var(--black);
+}
+.home .bt{
+    margin: 1rem 0rem;
+    background-image: url(./button.png);
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: #088178;
+    font-size: 2rem;
+    padding: 1rem 2rem 1rem 4rem;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px){
+    .home{
+        padding: 2rem 0%;
+        background-position: top 30% right 50%;
+    }
+} 
+
+@media screen and (max-width:991px) {
+ html{
+    font-size: 55%;
+ }   
+ header{
+    padding: 2rem;
+ }
+ section{
+    padding: 2rem;
+ }
+ .home{
+    padding: 1rem;
+ }
+ .home{
+    height: 85vh;
+    background-position: top 30% right 35%;
+   
+}
+}
+@media screen and (max-width:768px) {
+  header  #menu-bar{
+        display: initial;
+    }
+    header{
+        box-shadow: var(--box-shawdow);
+    }
+   header .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0rem;
+    width: 50%;
+    height: 100vh;
+    background-color: #e3e6f3;
+     transform:  scale(0);
+    opacity: 0;
+    transform-origin: top left;
+    transition: 0; 
+    
+   }
+   header .navbar.active{
+    transform: scale(1);
+    opacity: 1;
+    transition: .3s ease-out;
+
+   }
+   header .navbar a{
+    display: block;
+    color: var(--ligtcolor);
+    margin: 1rem 0rem;
+    padding: 1rem 2rem;
+   }
+   .home{
+    height: 70vh;
+    background-position: top 30% right 30%;
+   
+}
+}
+@media screen and (max-width:450px) {
+    html{
+       font-size: 50%;
+    } 
+    header .logo a img{
+        height: 4rem;
+        margin-left: 3rem;
+    }
+}

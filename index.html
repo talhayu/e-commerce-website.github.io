@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/321bd7016e.js" crossorigin="anonymous"></script>
+
+    <title>e-commerce</title>
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div class="fas fa-bars" id="menu-bar"></div>
+        <div class="logo">
+            <a href="#"><img src="./logo.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html" class="active">home</a>
+            <a href="./shop.html">shop</a>
+            <a href="./blog.html">blog</a>
+            <a href="./about.html">about</a>
+            <a href="./contact.html">conatct</a>
+            <a href="./cart.html"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search-here">
+            <label for="search-bar" class="fa fa-search"></label>
+
+        </form>
+
+
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+
+    <div class="login-form-container">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit"  value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>dont have an account? <a href="#">regesiter now</a></p>
+        </form>
+    </div>
+
+    <!-- login form container -->
+
+    <section id="home" class="home">
+    
+            <h3>true styles never dies</h3>
+            <h1>super values deal <br> <span> on all  products </span></h1>
+            <p>hurry up and oder now and get upto 70% discount.</p>
+            <button class="bt" onclick="hy()">shop now</button>
+        
+    </section>
+
+
+
+
+
+
+
+    <!-- custom js link -->
+    <script src="./index.js"></script>
+</body>
+</html>
