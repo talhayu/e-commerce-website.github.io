@@ -226,7 +226,7 @@ header .search-bar-container label:hover{
 /* home page ends */
 
 /* features section startr */
-/* #fddde4 */
+
 .features .box-container{
     display: flex;
     flex-wrap: wrap;
@@ -249,13 +249,14 @@ header .search-bar-container label:hover{
     margin: 1rem 0rem;
 }
 .features .box-container .box h6{
-    display: inline-block;
+    display: block;
     font-size: 1.7rem;
-    margin: 1rem 0rem;
+    margin: 1rem 2rem;
     color: var(--text-color);
     background-color: #cdebbc ;
     padding: .5rem;
-    text-shadow: var(--text-shadow);
+    text-align: center;
+    
 }
 /* features section ends */
 
