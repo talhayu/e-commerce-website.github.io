@@ -38,6 +38,7 @@ header{
     padding: 2rem 9%;
     box-shadow: var(--box-shawdow);
     background-color: #e3e6f3;
+    z-index: 1000;
 
 }
  header .navbar a{
@@ -130,6 +131,7 @@ header .search-bar-container label:hover{
     align-items: center;
     justify-content: center;
     background-color:  rgba(0, 0, 0, .7);
+    z-index: 1000;
 }
 .login-form-container.active{
     top: 0; 
@@ -294,7 +296,7 @@ header .search-bar-container label:hover{
         transition: .2s ease-out;
         cursor: pointer;
         position: relative;
-        z-index: -1;
+        
     }
     .product .box-container .box:hover{
         box-shadow: 0rem 1rem 2rem rgba(0, 0, 0, .5);
@@ -345,9 +347,8 @@ header .search-bar-container label:hover{
         right: 5rem;
         bottom: 1rem;
         padding: 1rem;
-      
+
     }
-    /* .product .box-container .box .content */
 /* product section ends */
 
 
