@@ -57,7 +57,7 @@ section{
     }
 /* header section startr */
 header{
-    position: fixed;
+    position: sticky;
     top: 0;
     right: 0;
     left: 0;
@@ -292,7 +292,6 @@ header .search-bar-container label:hover{
 /* product section start */
     .product .heading {
         text-align: center;
-        padding: 5rem ;
     }
     .product .heading h2{
         font-size: 5rem;
@@ -311,7 +310,9 @@ header .search-bar-container label:hover{
     .product .box-container{
           display: grid;
          gap: 1.5rem; 
-          grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr)); 
+          grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+          /* padding-top: 5rem;  */
+          margin-top: 5rem;
     }
     .product .box-container .box{
         box-shadow: var(--box-shawdow);
@@ -738,21 +739,43 @@ cursor: pointer;
 /* home section ends */
 
 /* shop section start */
-/* page-header start */
+/*pageination start */
 .page-header{
     background-image: url(./banner/b1.jpg);
-    background-repeat: no-repeat;
-    height: 40vh;
     width: 100%;
+    height: 40vh;
     background-size: cover;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    text-align: center;
     flex-direction: column;
-
+}
+.page-header h2{
+    color: #fff;
+    font-size: 4rem;
+    padding: 1rem 0rem;
+    font-weight: 400;
+}
+.page-header p{
+    color: #fff;
+    font-size: 2rem;
+}
+/*pageination start */
+.pagination{
+    text-align: center;
 }
 
-/* page-header ends */
+.pagination a{
+    background-color: var(--text-color);
+    padding: .9rem 1.4rem;
+    text-decoration: none;
+    color: #fff;
+    border-radius: .2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-right: .5rem;
+}
+/* pageination sectio0n */
 
 
 
