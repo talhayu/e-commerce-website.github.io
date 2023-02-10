@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
 :root{
     --box-shawdow: 0rem 1rem 2rem rgba(22, 160, 133, .2);
     --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2);
@@ -737,14 +739,19 @@ cursor: pointer;
 
 /* shop section start */
 /* page-header start */
-.home-shop{
+.page-header{
     background-image: url(./banner/b1.jpg);
+    background-repeat: no-repeat;
     height: 40vh;
-    color: #fff;
-    padding: 2rem 9%;
+    width: 100%;
+    background-size: cover;
     display: flex;
-    align-items: center;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
 }
+
 /* page-header ends */
 
 
@@ -953,5 +960,11 @@ cursor: pointer;
         .home{
             background-position: top 10% right 45%;
         }
+/*        
+      .page-header{
+        background-position: center;
+        background-position: right 50
+      } */
+    }
+
     
-}
