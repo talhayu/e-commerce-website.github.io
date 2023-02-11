@@ -787,10 +787,12 @@ cursor: pointer;
     flex-wrap: wrap;
     margin-top: 5rem;
     justify-content: space-between;
+
 }
 #product-details .box-container  .single-pro-image{
     flex: 1 1 30rem;
     width: 40%;
+   
 }
 #product-details .small-img-group{
     display: flex;
@@ -990,15 +992,19 @@ font-size: 1.5rem;
 
 @media screen and (max-width:1100px){
     #product-details .box-container  .single-pro-image{
-        margin-top: 8rem;
+        margin-top: 15rem;
     }
 }
 @media screen and (max-width:712px){
     #product-details .box-container  .single-pro-image{
-        margin-top: 15rem;
+        margin-top: 20rem;
     }
 }
-
+@media screen and (max-width:677px){
+    #product-details .box-container{
+        margin-top: -15rem;
+    }
+}
 @media screen and (max-width:1200px){
     .home{
         padding: 2rem 0%;
