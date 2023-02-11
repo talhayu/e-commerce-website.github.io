@@ -760,6 +760,7 @@ cursor: pointer;
     color: #fff;
     font-size: 2rem;
 }
+/* page header */
 /*pageination start */
 .pagination{
     text-align: center;
@@ -776,6 +777,93 @@ cursor: pointer;
     margin-right: .5rem;
 }
 /* pageination sectio0n */
+/* shop section end */
+
+/* s.product section */
+/*  product details section */
+#product-details .box-container{
+    display: flex;
+    gap: 3rem;
+    flex-wrap: wrap;
+    margin-top: 5rem;
+    justify-content: space-between;
+}
+#product-details .box-container  .single-pro-image{
+    flex: 1 1 30rem;
+    width: 40%;
+}
+#product-details .small-img-group{
+    display: flex;
+    justify-content: space-between;
+}
+.small-img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+#product-details .box-container .content{
+   flex: 1 1 40rem;
+   padding-top: 4rem;
+   padding: 3rem 3rem 0rem 3rem;
+   margin-top: 5rem;
+   
+}
+#product-details .box-container .content h6{
+    font-size: 2rem;
+    color: var(--text-color);
+    padding-bottom: 2rem;
+}
+#product-details .box-container .content h4{
+    font-size: 3rem;
+    padding-bottom: .5rem;
+    color: rgb(24, 24, 24);
+}
+#product-details .box-container .content h2{
+    font-size: 3rem;
+    color: var(--black);
+    font-weight: 400;
+    padding: .3rem 0rem;
+}
+#product-details .box-container .content h2 span{
+    font-size: 2rem;
+    font-weight: 300;
+    text-decoration: line-through  var(--text-color);
+}
+#product-details .box-container .content select{
+    display: block;
+    border: .1rem solid #908484;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+}
+#product-details .box-container .content input{
+    border: .1rem solid #908484;
+    padding: .5rem 1rem;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    margin-right: 2rem;
+    width: 7rem;
+}
+#product-details .box-container .content .product-btn{
+background-color: #088178;
+color: #fff;
+border: .1rem solid #088178;
+padding: .5rem 1rem;
+cursor: pointer;
+font-size: 1.5rem;
+}
+#product-details .box-container .content .product-btn:hover{
+    background-color: #fff;
+    color: #088178;
+}
+#product-details .box-container .content h3{
+    font-size: 3rem;
+    padding-bottom: 1rem;
+    color: rgb(24, 24, 24)
+}
+#product-details .box-container .content  p{
+    font-size: 1.5rem;
+}
+/*  product details section */
+/* s.product section */
 
 
 
@@ -900,12 +988,16 @@ cursor: pointer;
 
 
 
-
-
-
-
-
-
+@media screen and (max-width:1100px){
+    #product-details .box-container  .single-pro-image{
+        margin-top: 8rem;
+    }
+}
+@media screen and (max-width:712px){
+    #product-details .box-container  .single-pro-image{
+        margin-top: 15rem;
+    }
+}
 
 @media screen and (max-width:1200px){
     .home{
