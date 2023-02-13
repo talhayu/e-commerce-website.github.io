@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- custom css link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome link -->
+    <script src="https://kit.fontawesome.com/321bd7016e.js" crossorigin="anonymous"></script>
+
+    <title>e-commerce</title>
+
+    
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+         <div class="fas fa-bars" id="menu-bar"></div>
+        <div class="logo">
+            <a href="#"><img src="./logo.png" alt=""></a>
+        </div>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="./shop.html" >shop</a>
+            <a href="./blog.html">blog</a>
+            <a href="./about.html">about</a>
+            <a href="./contact.html">conatct</a>
+            <a href="./cart.html" class="active"><i class="fas fa-shopping-bag "></i></a>
+        </nav>
+        <div class="icons">
+            <i class="fas fa-search" id="search-btn"></i>
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+        <form action="" class="search-bar-container">
+            <input type="search" id="search-bar" placeholder="search-here">
+            <label for="search-bar" class="fa fa-search"></label>
+        </form>
+    </header>
+    <!-- header section ends -->
+
+    <!-- login form container -->
+    <div class="login-form-container">
+        <i class="fa-solid fa-xmark" id="form-close"></i>
+        <form action="">
+            <h3>login</h3>
+            <input type="email" class="box" placeholder="enter your email">
+            <input type="password" class="box" placeholder="enter your password">
+            <input type="submit"  value="login now" class="btn">
+            <input type="checkbox" id="remember">
+            <label for="remember">remember me</label>
+            <p>forget password? <a href="#">click here</a></p>
+            <p>dont have an account? <a href="#">regesiter now</a></p>
+        </form>
+    </div>
+    <!-- login form container -->
+
+    <!-- home section start -->
+    <section class="cart-header" id="page-header">
+        <h2>#cart</h2>
+        <p>Lorem ipsum dolor sit.</p>
+    </section> 
+    <!-- home section ends -->
+
+  <!-- cart -->
+    <section class="cart">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remove</td>
+                    <td>image</td>
+                    <td>prodcuct</td>
+                    <td>price</td>
+                    <td>quantity</td>
+                    <td>subtotal</td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./products/f1.jpg"alt=""></td>
+                    <td>Stylish Mens T-Shirt</td>
+                    <td>$150</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$150</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./products/f2.jpg"alt=""></td>
+                    <td>Stylish Mens T-Shirt</td>
+                    <td>$150</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$150</td>
+                </tr>
+
+                <tr>
+                    <td><a href="#"><i class="far fa-times-circle"></i></a></td>
+                    <td><img src="./products/f3.jpg"alt=""></td>
+                    <td>Stylish Mens T-Shirt</td>
+                    <td>$150</td>
+                    <td><input type="number" value="1"></td>
+                    <td>$150</td>
+                </tr>
+            </tbody>
+          
+        </table>
+    </section>
+<!-- cart -->
+
+<section class="add">
+    <div id="coupon">
+        <h3>apply coupon</h3>
+        <div>
+            <input type="text" placeholder="enter your coupon">
+            <button class="add-btn">apply</button>
+        </div>
+    </div>
+
+    <div id="subtotal">
+        <h3>cart total</h3>
+        <table>
+            <td>subtotal</td>
+            <td> $335</td>
+            <tr>
+                <td>shipping</td>
+                <td>free</td>
+            </tr>
+            <tr>
+                <td><strong>total</strong></td>
+                <td><strong>$ 335</strong></td>
+            </tr>
+        </table>
+        <button class="chk-btn">proceed to checkout</button>
+    </div>
+ </section>
+
+    <!-- newseletter -->
+    <section class="newseletter">
+        <div class="content">
+            <h4>sign up for new arrival</h4>
+            <p>get email updates of our new arrival and exclusive products</p>
+        </div>
+        <div class="form">
+            <input type="email" placeholder="enter your email">
+            <button class="email-btn">sign up</button>
+        </div>
+    </section>
+    <!-- new seletter -->
+
+    <!-- footer section -->
+    <section class="footer">
+       <div class="logo"><img src="./logo.png" alt=""></div>
+        <div class="box-container">
+            <div class="box">
+                <h3>quick links</h3>
+                 <a href="index.html" class="active"><i class="fas fa-chevron-right"></i>home</a>
+            <a href="./shop.html"><i class="fas fa-chevron-right"></i>shop</a>
+            <a href="./blog.html"><i class="fas fa-chevron-right"></i>blog</a>
+            <a href="./about.html"><i class="fas fa-chevron-right"></i>about</a>
+            <a href="./contact.html"><i class="fas fa-chevron-right"></i>conatct</a>
+            <a href="./cart.html"><i class="fas fa-chevron-right"></i><i class="fas fa-shopping-bag"></i></a>
+            </div>
+            <div class="box">
+                <h3>our services</h3>
+                <a><i class="fas fa-chevron-right"></i>return-exchange policy</a>
+                <a><i class="fas fa-chevron-right"></i>fast-shipping</a>
+                <a><i class="fas fa-chevron-right"></i>affordable price</a>
+                <a><i class="fas fa-chevron-right"></i>new design</a>
+                <a><i class="fas fa-chevron-right"></i>good quality</a>
+            </div>
+            <div class="box">
+                <h3>contact info </h3>
+                <a><i class="fas fa-phone"></i>+92 1115896</a>
+                <a><i class="fas fa-phone"></i>+92 3332225</a>
+                <a style="text-transform: none;"><i class="fa-sharp fa-solid fa-envelope"></i>cara215@gmail.com</a>
+                <a style="text-transform: none;"><i class="fa-sharp fa-solid fa-envelope"></i>contact99223@gmail.com</a>
+                <a ><i class="fas fa-map-marker-alt"></i>karachi,pakistan - 1110</a>
+            </div>
+            <div class="box">
+                <h3>follow us</h3>
+                <a><i class="fa-brands fa-square-facebook"></i>facebook</a>
+                <a><i class="fa-brands fa-twitter"></i>twitter</a>
+                <a><i class="fa-brands fa-square-instagram"></i>instagram</a>
+                <a><i class="fa-brands fa-linkedin"></i>linkedin</a>
+            </div>
+            <div class="box">
+                <h3>install apps</h3>
+                <p>form app store or goole play</p>
+                <div class="image">
+                <img src="./pay/app.jpg" alt="">
+                <img src="./pay/play.jpg" alt="">
+            </div>
+            <div class="text">
+                <p>secured payment</p>
+            </div>
+                <img src="./pay/pay.png" alt="">
+            </div>
+        </div>
+        <div class="credit">
+            created by <span>mr. anonymous </span> | all rights reserved 
+        </div>
+    </section>
+    <!-- footer section -->
+
+
+
+    <!-- custom js link -->
+    <script src="./index.js"></script>
+</body>
+</html>
